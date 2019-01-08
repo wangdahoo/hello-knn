@@ -19,11 +19,11 @@ def create_datasets():
     return datasets, labels
 
 def knn_predict(newV):
-		knn = neighbors.KNeighborsClassifier()
-		datasets, labels = create_datasets()
-		knn.fit(datasets, labels)
-		predictRes = knn.predict([newV])
-		return predictRes
+	knn = neighbors.KNeighborsClassifier()
+	datasets, labels = create_datasets()
+	knn.fit(datasets, labels)
+	predictRes = knn.predict([newV])
+	return predictRes
 
 if __name__ == '__main__':
-		print(knn_predict([2, 4, 4]))
+	print(knn_predict([2, 4, 4]))
