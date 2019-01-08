@@ -5,7 +5,7 @@ import numpy as np
 from sklearn import neighbors
 
 def create_datasets():
-		# 分别为吃冰激凌数、喝水数、户外活动小时数
+	# 分别为吃冰激凌数、喝水数、户外活动小时数
     datasets = np.array([
         [8, 4, 2],
         [7, 1, 1],
